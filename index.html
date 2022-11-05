@@ -64,7 +64,9 @@
             Ефективні рішення для<br />
             вашого бізнесу
           </h1>
-          <button class="hero-btn" type="button">Замовити Послугу</button>
+          <button class="hero-btn" type="button" data-modal-open>
+            Замовити Послугу
+          </button>
         </div>
       </section>
 
@@ -128,30 +130,45 @@
           <h2 class="title">Чим ми займаємося</h2>
           <ul class="work-list list">
             <li class="work-item item">
-              <img
-                class="work-image"
-                src="./images/softengineer.jpg"
-                width="370"
-                alt="softengineer"
-              />
+              <div class="work-thumb">
+                <img
+                  class="work-image"
+                  src="./images/softengineer.jpg"
+                  width="370"
+                  alt="softengineer"
+                />
+                <div class="work-overlay">
+                  <p class="work-overlay-text">Десктопні додатки</p>
+                </div>
+              </div>
             </li>
 
             <li class="work-item item">
-              <img
-                class="work-image"
-                src="./images/mobiledev.jpg"
-                width="370"
-                alt="mobiledev"
-              />
+              <div class="work-thumb">
+                <img
+                  class="work-image"
+                  src="./images/mobiledev.jpg"
+                  width="370"
+                  alt="mobiledev"
+                />
+                <div class="work-overlay">
+                  <p class="work-overlay-text">Мобільні додатки</p>
+                </div>
+              </div>
             </li>
 
             <li class="work-item item">
-              <img
-                class="work-image"
-                src="./images/gamedev.jpg"
-                width="370"
-                alt="gamedev"
-              />
+              <div class="work-thumb">
+                <img
+                  class="work-image"
+                  src="./images/gamedev.jpg"
+                  width="370"
+                  alt="gamedev"
+                />
+                <div class="work-overlay">
+                  <p class="work-overlay-text">Дизайнерські рішення</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -436,5 +453,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-button" data-modal-close>
+          <svg class="modal-icon">
+            <use href="./images/sprite.svg#btn-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
   </body>
 </html>
