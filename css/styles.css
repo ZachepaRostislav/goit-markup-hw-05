@@ -200,6 +200,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--black-color);
+  transition: color 250ms var(--time-function);
 }
 
 .contact-mail-icon {
@@ -207,6 +208,7 @@ img {
   width: 16px;
   height: 12px;
   fill: currentColor;
+  transition: fill 250ms var(--time-function);
 }
 
 .contact-phone-icon {
@@ -214,17 +216,16 @@ img {
   width: 10px;
   height: 16px;
   fill: currentColor;
+  transition: fill 250ms var(--time-function);
 }
 
 .contact-link:hover,
 .contact-link:focus .contact-mail-icon {
   fill: var(--accent-color);
-  transition: fill 250ms var(--time-function);
 }
 .contact-link:hover,
 .contact-link:focus .contact-phone-icon {
   fill: var(--accent-color);
-  transition: fill 250ms var(--time-function);
 }
 
 .contact-link {
@@ -238,7 +239,6 @@ img {
 .footer-link:hover,
 .footer-link:focus {
   color: var(--accent-color);
-  transition: color 250ms var(--time-function);
 }
 
 /*----------hero----------*/
@@ -288,12 +288,12 @@ img {
   border-radius: 4px;
   border: none;
   cursor: pointer;
+  transition: background-color 250ms var(--time-function);
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #188ce8;
-  transition: background-color 250ms var(--time-function);
 }
 
 /*---------advantages--------*/
@@ -431,7 +431,7 @@ img {
 }
 
 .team-position {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   font-size: 16px;
   letter-spacing: 0.03em;
   color: inherit;
@@ -460,25 +460,24 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  transition: background-color 250ms var(--time-function);
 }
 
 .team-icon {
   width: 20px;
   height: 20px;
   fill: var(--bg-color-social-icon);
+  transition: fill 250ms var(--time-function);
 }
 
 .team-icon-link:hover,
 .team-icon-link:focus {
   background-color: var(--accent-color);
-
-  transition: background-color 250ms var(--time-function);
 }
 
 .team-icon-link:hover .team-icon,
 .team-icon-link:focus .team-icon {
   fill: var(--white-text-color);
-  transition: fill 250ms var(--time-function);
 }
 
 /*-----------regular-customers-----------------*/
@@ -497,24 +496,24 @@ img {
   padding: 14px 31px;
   border: 1px solid var(--bg-color-social-icon);
   border-radius: 4px;
+  transition: border-color 250ms var(--time-function);
 }
 
 .regular-icon {
   width: 106px;
   height: 60px;
   fill: var(--bg-color-social-icon);
+  transition: fill 250ms var(--time-function);
 }
 
 .regular-link:hover .regular-icon,
 .regular-link:focus .regular-icon {
   fill: var(--accent-color);
-  transition: fill 250ms var(--time-function);
 }
 
 .regular-link:hover,
 .regular-link:focus {
   border-color: var(--accent-color);
-  transition: border-color 250ms var(--time-function);
 }
 
 /*----------footer----------*/
@@ -542,6 +541,7 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms var(--time-function);
 }
 
 .location {
@@ -581,6 +581,8 @@ img {
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+
+  transition: background-color 250ms var(--time-function);
 }
 
 .footer-social-item:not(:first-child) {
@@ -596,7 +598,6 @@ img {
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--accent-color);
-  transition: background-color 250ms var(--time-function);
 }
 
 /*-----------portfolio-----------*/
@@ -625,6 +626,8 @@ img {
   border-radius: 4px;
   border-color: transparent;
   cursor: pointer;
+  transition: background-color 250ms var(--time-function),
+    color 250ms var(--time-function), box-shadow 250ms var(--time-function);
 }
 
 .portfolio-btn:hover,
@@ -633,8 +636,6 @@ img {
   color: var(--white-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: background-color 250ms var(--time-function),
-    color 250ms var(--time-function), box-shadow 250ms var(--time-function);
 }
 
 .portfolio-images-list {
